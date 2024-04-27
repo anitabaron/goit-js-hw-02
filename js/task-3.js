@@ -1,10 +1,15 @@
+// function checkForSpam(message) {
+//   const msgCheck = message.toLowerCase();
+//   if (msgCheck.includes("spam") || msgCheck.includes("sale")) {
+//     return "true";
+//   } else {
+//     return "false";
+//   }
+// }
+
 function checkForSpam(message) {
   const msgCheck = message.toLowerCase();
-  if (msgCheck.includes("spam") || msgCheck.includes("sale")) {
-    return "true";
-  } else {
-    return "false";
-  }
+  return msgCheck.includes("spam") || msgCheck.includes("sale");
 }
 
 console.log(checkForSpam("Latest technology news")); // false
